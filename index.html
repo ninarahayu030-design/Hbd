@@ -1,0 +1,147 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="https://feeldreams.github.io/pesanbuatmu/style.css" rel="stylesheet" type="text/css" /><script src="https://pesanbuatmu.feeldream.repl.co/script.js"></script>
+<head>
+<title>Script HTML</title>
+<!-- 
+  Made with love by Rayys!
+
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+
+  Thanks to all <3
+-->
+</head>
+<style>
+:root {
+--warna-bg: rgba(0, 0, 0, .75); 
+--warna-teks: white;
+--warna-bingkai: rgba(255, 255, 255, .8);
+--bingkai: 10px;
+--gaya-font: 'Ubuntu', sans-serif;
+}
+
+#fotoakhir {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--warna-bingkai);
+}
+</style>
+<body>
+	
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="wp.jpg"/>
+   </div>
+
+   <div id='Content'>
+   	
+     <div id="suratin" onClick="memulai()">
+       <!-- Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+     <p id="ket">Klik Suratnya!</p>
+   
+     <div><!-- Foto Akhir --><img src="ws.gif" id="fotoakhir" /></div>
+     <div><blockquote id='bq'>
+       <p id="kalimat"></p>
+       <p id="kalimatc"></p>
+     </blockquote></div>
+   
+     
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  function showDiv() {Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";}
+  function memulai(){suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(pesan,300)}
+  function kpemb() {suratin.style="display:none";ket.style="display:none";fotoakhir.style="display:inline-flex;transform:scale(1);";Content.style = "opacity:1;margin-top:2vh;";bq.style = "opacity:1;visibility:visible;margin-top:5px";setTimeout(ngetik,500)}
+  
+  function tombol(){Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";ftom=1;} ftom=0; function fakhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
+  const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 2500, timerProgressBar: true, imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+  function setel(){audio.play();} function setel2(){bgm.play();} function sjawab(){if(ftom==1){Tombol.style="display:none";jawab();}}
+  
+  var aa=0,katangetik;function ngetik() {if(aa<katangetik.length){kalimat.innerHTML += katangetik.charAt(aa);aa++;setTimeout(ngetik,80);} if(aa==katangetik.length){kalimatc.style="margin-top:30px;margin-bottom:10px";setTimeout(ngetik2,500)}}
+  var ai=0,katangetik2;function ngetik2() {if(ai<katangetik2.length){kalimatc.innerHTML += katangetik2.charAt(ai);ai++;setTimeout(ngetik2,150);} if(ai==katangetik2.length){setTimeout(tombol,300)}}
+</script> <!-- Sampai Sini -->
+
+<!-- Ganti Kata², Foto, Lagu di bawah ya
+1) Upload foto ke https://postimages.org
+     buat dapetin linknya
+2) Ganti Lagu Upload ke replit.com
+     atau bisa juga ke mailboxdrive.com -->
+
+<script type="text/javascript">
+       async function jawab(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+
+      async function pertama(){
+         audio = new Audio('music.mp3');setTimeout(showDiv,100);
+       } pertama();
+       
+       async function pesan(){
+       	      audio.play();
+             	await swalst.fire({
+                  title: 'Selamat ulang tahun ke-19 ya!🥳'
+                  });
+                 await swalst.fire({
+                  title: 'Walaupun kita nggak terlalu sering ngobrol...'
+                  });
+                 await swalst.fire({
+                  title: 'aku tetap mau ikut ngucapin dan mendoakan yang terbaik buat kamu di hari ulang tahunmu.',
+allowOutsideClick: false, 
+                  showConfirmButton: false, 
+                  timer: 5000, 
+                  timerProgressBar: true, 
+                  imageWidth: 100, 
+                  imageHeight: 100});
+                 await swalst.fire({
+                  title: 'Semoga di usia yang baru ini...'
+                  });
+                 await swalst.fire({
+                  title: 'kamu makin dewasa,'
+                  });
+                 await swalst.fire({
+                  title: 'sehat selalu,'
+                  });
+                 await swalst.fire({
+                  title: 'bahagia selalu,'
+                  });
+                 await swalst.fire({
+                  title: 'dimudahkan dalam semua hal yang sedang kamu jalani dan perjuangkan',
+allowOutsideClick: false, 
+                  showConfirmButton: false, 
+                  timer: 3500, 
+                  timerProgressBar: true, 
+                  imageWidth: 100, 
+                  imageHeight: 100});
+                 await swalst.fire({
+                  title: 'Semoga apa pun yang kamu impikan dan targetkan bisa tercapai satu per satu,',
+allowOutsideClick: false, 
+                  showConfirmButton: false, 
+                  timer: 3500, 
+                  timerProgressBar: true, 
+                  imageWidth: 100, 
+                  imageHeight: 100});
+                 await swalst.fire({
+                  title: 'rezekinya lancar,'
+                  });
+                 await swalst.fire({
+                  title: 'dan selalu dikelilingi orang-orang baik yang mendukung kamu',
+allowOutsideClick: false, 
+                  showConfirmButton: false, 
+                  timer: 3500, 
+                  timerProgressBar: true, 
+                  imageWidth: 100, 
+                  imageHeight: 100});
+
+                  katangetik = "Di usia 19 ini pasti banyak hal baru yang mau kamu capai, entah itu soal, pertemanan, atau kehidupan pribadi. Semoga kamu selalu diberi kekuatan, kesabaran, dan keberanian untuk menghadapi semuanya. Kalau ada masa-masa capek atau bingung, semoga selalu ada jalan keluar dan orang yang bisa bantu kamu. Jangan lupa jaga kesehatan, istirahat yang cukup, dan jangan terlalu keras sama diri sendiri." + 
+                    
+                    "Semoga hari ulang tahunmu hari ini menyenangkan dan penuh hal-hal baik. Panjang umur, murah rezeki, dan semoga tahun ini jadi tahun yang lebih baik buat kamu. Selamat ulang tahun sekali lagi";
+                  katangetik2 = "sekali lagi HAPPY BROJOL DAY YAA 🥳🎉🎊 ";
+                  
+                  pesanwhatsapp = "mantul";
+                 setTimeout(kpemb,300);
+            }
+</script>
+</body>
+</html>
